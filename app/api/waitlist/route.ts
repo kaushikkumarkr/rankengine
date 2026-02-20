@@ -54,7 +54,7 @@ export async function POST(req: Request) {
                 const firstName = validatedData.full_name.split(" ")[0] || "there";
 
                 await resend.emails.send({
-                    from: "RankEngine <waitlist@rankengine.com>", // You'll need to verify this domain in Resend
+                    from: process.env.RESEND_FROM_EMAIL || "RankEngine <waitlist@rankengine.com>", // You'll need to verify this domain in Resend
                     to: validatedData.email,
                     subject: "You're on the RankEngine waitlist — here's what happens next",
                     html: `
