@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Twitter, Linkedin, Globe } from "lucide-react";
+import { Globe } from "lucide-react";
 
 export default function Footer() {
     return (
@@ -11,7 +11,7 @@ export default function Footer() {
                         <Link href="/" className="flex items-center gap-2 group mb-6">
                             <Globe size={24} strokeWidth={2.5} className="text-white opacity-90 group-hover:opacity-100 transition-opacity" />
                             <span className="text-xl font-bold tracking-tight text-white opacity-90 group-hover:opacity-100 transition-opacity">
-                                RankAgent
+                                RankEngine
                             </span>
                         </Link>
                         <p className="text-white/50 max-w-sm">
@@ -33,14 +33,6 @@ export default function Footer() {
                             <li><Link href="#" className="text-white/50 hover:text-white transition-colors">Privacy Policy</Link></li>
                             <li><Link href="#" className="text-white/50 hover:text-white transition-colors">Terms of Service</Link></li>
                         </ul>
-                        <div className="mt-6 flex gap-4">
-                            <a href="#" className="text-white/40 hover:text-white transition-colors">
-                                <Twitter size={20} />
-                            </a>
-                            <a href="#" className="text-white/40 hover:text-white transition-colors">
-                                <Linkedin size={20} />
-                            </a>
-                        </div>
                     </div>
 
                 </div>
