@@ -28,11 +28,7 @@ export default function Footer() {
                     </div>
 
                     <div>
-                        <h4 className="font-bold text-white/90 mb-4">Legal</h4>
-                        <ul className="space-y-3">
-                            <li><Link href="#" className="text-white/50 hover:text-white transition-colors">Privacy Policy</Link></li>
-                            <li><Link href="#" className="text-white/50 hover:text-white transition-colors">Terms of Service</Link></li>
-                        </ul>
+                        {/* Placeholder for future columns if needed */}
                     </div>
 
                 </div>
