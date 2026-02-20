@@ -13,14 +13,14 @@ export default function Hero() {
         <section className="relative min-h-[100vh] flex flex-col justify-center items-center overflow-hidden bg-black pb-20 pt-32">
 
             {/* Cinematic Background */}
-            <div className="absolute inset-0 z-0 select-none pointer-events-none">
+            <div className="absolute inset-0 z-0 pointer-events-none">
                 <img
                     src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?q=80&w=2940&auto=format&fit=crop"
                     alt="Dark Cinematic NYC Skyline"
-                    className="w-full h-full object-cover opacity-80 mix-blend-lighten"
+                    className="w-full h-full object-cover opacity-100"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
-                <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-black/40" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
             </div>
 
             <div className="relative z-10 max-w-4xl mx-auto px-6 flex flex-col items-center text-center">
