@@ -40,7 +40,7 @@ const features = [
         )
     },
     {
-        title: "LLM Citation Generation",
+        title: "AEO & GEO Citation Generation",
         description: "We optimize your brand to be cited as the primary source in ChatGPT, Perplexity, and Google's AI Overviews.",
         icon: <ShieldCheck className="w-5 h-5 text-emerald-400" />,
         colSpan: "md:col-span-2",

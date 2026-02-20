@@ -58,7 +58,7 @@ export default function Hero() {
                     transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                     className="relative text-lg md:text-xl text-white/60 max-w-2xl mb-12 leading-relaxed"
                 >
-                    Autonomous AI agents for enterprise search growth. RankEngine monitors, fixes, and optimizes your site and brand citations natively 24/7.
+                    Autonomous AI agents for enterprise search growth. RankEngine monitors, fixes, and optimizes your site for SEO, AEO, and GEO natively 24/7.
                 </motion.p>
 
                 {/* CTA */}

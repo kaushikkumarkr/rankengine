@@ -22,8 +22,8 @@ const problems = [
         icon: <TrendingDown className="w-6 h-6 text-purple-500" />,
         glowColor: "group-hover:shadow-[inset_0_0_80px_rgba(168,85,247,0.05)]",
         borderHover: "group-hover:border-purple-500/30",
-        title: "AI Search Is Evolving",
-        description: "ChatGPT and Perplexity don't care about your backlinks or keyword density. They care about entity citations, which traditional SEO ignores.",
+        title: "The Rise of AEO & GEO",
+        description: "ChatGPT and Perplexity don't care about your backlinks. They care about entity citations. Traditional SEO misses Answer Engine Optimization.",
     },
 ];
 
