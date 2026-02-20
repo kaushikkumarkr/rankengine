@@ -1,9 +1,25 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
+const TITLES = [
+    "an SEO engineer.",
+    "an AEO engineer.",
+    "a GEO engineer."
+];
+
 export default function Hero() {
+    const [titleIndex, setTitleIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setTitleIndex((prev) => (prev + 1) % TITLES.length);
+        }, 3000); // Change text every 3 seconds
+        return () => clearInterval(interval);
+    }, []);
+
     const scrollToWaitlist = (e: React.MouseEvent<HTMLAnchorElement>) => {
         e.preventDefault();
         document.getElementById("waitlist")?.scrollIntoView({ behavior: "smooth" });
@@ -41,15 +57,29 @@ export default function Hero() {
                 </motion.div>
 
                 {/* Serif Headline */}
-                <motion.h1
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
-                    className="relative text-5xl md:text-7xl lg:text-[5.5rem] font-serif tracking-tight text-white mb-8 leading-[1.05]"
-                >
-                    AI that reasons like <br className="hidden md:block" />
-                    <span className="text-white/80">an SEO engineer.</span>
-                </motion.h1>
+                <div className="relative text-5xl md:text-7xl lg:text-[5.5rem] font-serif tracking-tight text-white mb-8 leading-[1.05] min-h-[120px] md:min-h-[160px] lg:min-h-[180px]">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
+                    >
+                        AI that reasons like <br className="hidden md:block" />
+                        <div className="h-[1.2em] relative overflow-hidden mt-2">
+                            <AnimatePresence mode="wait">
+                                <motion.span
+                                    key={titleIndex}
+                                    initial={{ opacity: 0, y: 40 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    exit={{ opacity: 0, y: -40 }}
+                                    transition={{ duration: 0.4, ease: "easeInOut" }}
+                                    className="block text-white/80"
+                                >
+                                    {TITLES[titleIndex]}
+                                </motion.span>
+                            </AnimatePresence>
+                        </div>
+                    </motion.div>
+                </div>
 
                 {/* Subheadline */}
                 <motion.p
