@@ -17,10 +17,10 @@ export default function Hero() {
                 <img
                     src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?q=80&w=2940&auto=format&fit=crop"
                     alt="Dark Cinematic NYC Skyline"
-                    className="w-full h-full object-cover opacity-50 mix-blend-luminosity"
+                    className="w-full h-full object-cover opacity-80 mix-blend-lighten"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
-                <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent" />
             </div>
 
             <div className="relative z-10 max-w-4xl mx-auto px-6 flex flex-col items-center text-center">
